@@ -14,8 +14,6 @@
     quick-tap-ms = <100>;
     retro-tap;
     hold-trigger-on-release;
-    flavor = "balanced";
-    tapping-term-ms = <50>;
 };
 
 / {
