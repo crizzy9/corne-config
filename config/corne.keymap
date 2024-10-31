@@ -89,10 +89,10 @@
 
         symbol_layer {
             bindings = <
-&kp EXCL   &kp LEFT_BRACE  &kp SQT    &kp DQT      &kp RIGHT_BRACE  &kp QUESTION     &trans      &trans     &trans    &trans    &trans    &trans
-&kp HASH   &kp CARET       &kp EQUAL  &kp UNDER    &kp DOLLAR       &kp ASTRK        &kp PERIOD  &kp GRAVE  &kp AMPS  &kp PLUS  &kp AT    &trans
-&kp TILDE  &kp LT          &kp PIPE   &kp MINUS    &kp GT           &kp FSLH         &kp COMMA   &kp LPAR   &kp LBKT  &kp RBKT  &kp RPAR  &kp BSLH
-                                      &kp PERCENT  &kp COLON        &kp SEMICOLON    &trans      &trans     &trans
+&kp EXCL   &kp LEFT_BRACE  &kp SQT    &kp DQT      &kp RIGHT_BRACE  &kp QUESTION     &kp RETURN  &kp LS(TAB)  &kp TAB   &kp SPACE  &kp BACKSPACE  &kp ESC
+&kp HASH   &kp CARET       &kp EQUAL  &kp UNDER    &kp DOLLAR       &kp ASTRK        &kp PERIOD  &kp GRAVE    &kp AMPS  &kp PLUS   &kp AT         &kp LEFT_SHIFT
+&kp TILDE  &kp LT          &kp PIPE   &kp MINUS    &kp GT           &kp FSLH         &kp COMMA   &kp LPAR     &kp LBKT  &kp RBKT   &kp RPAR       &kp BSLH
+                                      &kp PERCENT  &kp COLON        &kp SEMICOLON    &trans      &trans       &trans
             >;
 
             label = "sym";
