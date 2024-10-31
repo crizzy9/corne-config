@@ -77,7 +77,7 @@
         system_layer {
             display-name = "sys";
             bindings = <
-&kp TAB     &tog 0             &tog 7        &kp N3        &kp N4           &kp N5               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&kp TAB     &to 0              &to 7         &to 8         &kp N4           &kp N5               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &ext_power EP_TOG  &out OUT_TOG  &kp K_MUTE    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN    &trans    &trans    &trans    &trans     &trans  &trans
                                              &kp DEL       &kp ESC          &kp BACKSPACE        &kp RET   &trans    &kp RALT
@@ -86,9 +86,9 @@
 
         navigation_layer {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &kp K_UNDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_REDO  &kp K_MUTE
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp K_LOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &kp C_VOLUME_UP
-&trans  &trans    &trans    &trans     &trans     &trans    &trans      &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &kp C_VOLUME_DOWN
+&trans  &trans    &trans    &trans     &trans     &trans    &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO  &kp K_MUTE
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp K_LOCK  &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &kp C_VOLUME_UP
+&trans  &trans    &trans    &trans     &trans     &trans    &trans      &kp HOME     &kp PG_UP   &kp PG_DN  &kp END     &kp C_VOLUME_DOWN
                             &trans     &trans     &trans    &trans      &trans       &trans
             >;
 
@@ -139,7 +139,7 @@
 
         lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 0   &to 7   &to 8   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &tog 6  &tog 4  &tog 2    &tog 1  &tog 3  &tog 5
