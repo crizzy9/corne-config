@@ -48,7 +48,27 @@
 &kp GRAVE   &kp Q        &kp W            &kp E         &kp R              &kp T              &kp Y        &kp U          &kp I         &kp O             &kp P           &kp MINUS
 &caps_word  &hml LGUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G              &kp H        &hmr RSHIFT J  &hmr RCTRL K  &hmr RIGHT_ALT L  &hmr RGUI SEMI  &kp SQT
 &kp LSHFT   &kp Z        &kp X            &kp C         &kp V              &kp B              &kp N        &kp M          &kp COMMA     &kp DOT           &kp FSLH        &lt 9 TAB
-                                          &lt 6 DEL     &lt 4 ESCAPE       &lt 2 BACKSPACE    &lt 1 SPACE  &lt 3 RETURN   &lt 5 TAB
+                                          &lt 8 DEL     &lt 6 ESCAPE       &lt 4 BACKSPACE    &lt 3 SPACE  &lt 5 RETURN   &lt 7 TAB
+            >;
+        };
+
+        colemak_dh {
+            display-name = "beta";
+            bindings = <
+&kp GRAVE   &kp Q        &kp W            &kp F         &kp P              &kp B              &kp J        &kp L          &kp U         &kp Y             &kp SQT      &kp MINUS
+&caps_word  &hml LGUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G              &kp M        &hmr RSHIFT N  &hmr RCTRL E  &hmr RIGHT_ALT I  &hmr RGUI O  &kp SEMICOLON
+&kp LSHFT   &kp Z        &kp X            &kp C         &kp D              &kp V              &kp K        &kp H          &kp COMMA     &kp DOT           &kp FSLH     &lt 9 TAB
+                                          &lt 8 DEL     &lt 6 ESCAPE       &lt 4 BACKSPACE    &lt 3 SPACE  &lt 5 RETURN   &lt 7 TAB
+            >;
+        };
+
+        engram {
+            display-name = "alpha";
+            bindings = <
+&kp GRAVE   &kp B        &kp Y            &kp O         &kp U              &kp SQT            &kp SEMICOLON  &kp L          &kp D         &kp W             &kp V        &kp Z
+&caps_word  &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA          &kp PERIOD     &hmr RSHIFT H  &hmr RCTRL T  &hmr RIGHT_ALT S  &hmr RGUI N  &kp Q
+&kp LSHFT   &kp G        &kp X            &kp J         &kp K              &kp MINUS          &kp SLASH      &kp R          &kp M         &kp F             &kp P        &lt 9 TAB
+                                          &lt 8 DEL     &lt 6 ESCAPE       &lt 4 BACKSPACE    &lt 3 SPACE    &lt 5 RETURN   &lt 7 TAB
             >;
         };
 
@@ -77,7 +97,7 @@
         system_layer {
             display-name = "sys";
             bindings = <
-&kp TAB     &to 0              &to 7         &to 8         &kp N4           &kp N5               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&kp TAB     &to 0              &to 1         &to 2         &kp N4           &kp N5               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &ext_power EP_TOG  &out OUT_TOG  &kp K_MUTE    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN    &trans    &trans    &trans    &trans     &trans  &trans
                                              &kp DEL       &kp ESC          &kp BACKSPACE        &kp RET   &trans    &kp RALT
@@ -117,32 +137,12 @@
             label = "game";
         };
 
-        colemak_dh {
-            display-name = "beta";
-            bindings = <
-&kp GRAVE   &kp Q        &kp W            &kp F         &kp P              &kp B              &kp J        &kp L          &kp U         &kp Y             &kp SQT      &kp MINUS
-&caps_word  &hml LGUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G              &kp M        &hmr RSHIFT N  &hmr RCTRL E  &hmr RIGHT_ALT I  &hmr RGUI O  &kp SEMICOLON
-&kp LSHFT   &kp Z        &kp X            &kp C         &kp D              &kp V              &kp K        &kp H          &kp COMMA     &kp DOT           &kp FSLH     &lt 9 TAB
-                                          &lt 6 DEL     &lt 4 ESCAPE       &lt 2 BACKSPACE    &lt 1 SPACE  &lt 3 RETURN   &lt 5 TAB
-            >;
-        };
-
-        engram {
-            display-name = "alpha";
-            bindings = <
-&kp GRAVE   &kp B        &kp Y            &kp O         &kp U              &kp SQT            &kp SEMICOLON  &kp L          &kp D         &kp W             &kp V        &kp Z
-&caps_word  &hml LGUI C  &hml LEFT_ALT I  &hml LCTRL E  &hml LEFT_SHIFT A  &kp COMMA          &kp PERIOD     &hmr RSHIFT H  &hmr RCTRL T  &hmr RIGHT_ALT S  &hmr RGUI N  &kp Q
-&kp LSHFT   &kp G        &kp X            &kp J         &kp K              &kp MINUS          &kp SLASH      &kp R          &kp M         &kp F             &kp P        &lt 9 TAB
-                                          &lt 6 DEL     &lt 4 ESCAPE       &lt 2 BACKSPACE    &lt 1 SPACE    &lt 3 RETURN   &lt 5 TAB
-            >;
-        };
-
         lower {
             bindings = <
-&trans  &to 0   &to 7   &to 8   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 0   &to 1   &to 2   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &tog 6  &tog 4  &tog 2    &tog 1  &tog 3  &tog 5
+                        &tog 8  &tog 6  &tog 4    &tog 3  &tog 5  &tog 7
             >;
         };
     };
