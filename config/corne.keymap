@@ -11,9 +11,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &lt {
-    quick-tap-ms = <50>;
+    quick-tap-ms = <75>;
     hold-trigger-on-release;
-    tapping-term-ms = <75>;
+    tapping-term-ms = <100>;
     flavor = "balanced";
     retro-tap;
 };
@@ -26,10 +26,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <90>;
+            tapping-term-ms = <150>;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 40 41 39>;
-            quick-tap-ms = <50>;
-            flavor = "tap-preferred";
+            quick-tap-ms = <75>;
+            flavor = "balanced";
             hold-trigger-on-release;
         };
 
@@ -39,10 +39,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <90>;
+            tapping-term-ms = <150>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-            quick-tap-ms = <50>;
-            flavor = "tap-preferred";
+            quick-tap-ms = <75>;
+            flavor = "balanced";
             hold-trigger-on-release;
         };
 
@@ -50,28 +50,28 @@
             compatible = "zmk,behavior-tap-dance";
             label = "A_HDMLGUI";
             #binding-cells = <0>;
-            bindings = <&hmr LGUI A>, <&kp A>;
+            bindings = <&hmr LGUI A>, <&kp A>, <&kp A>;
         };
 
         S_hmdlalt: S_hmdlalt {
             compatible = "zmk,behavior-tap-dance";
             label = "S_HMDLALT";
             #binding-cells = <0>;
-            bindings = <&hmr LALT S>, <&kp S>;
+            bindings = <&hmr LALT S>, <&kp S>, <&kp S>;
         };
 
         D_hdmlctrl: D_hdmlctrl {
             compatible = "zmk,behavior-tap-dance";
             label = "D_HDMLCTRL";
             #binding-cells = <0>;
-            bindings = <&hmr LCTRL D>, <&kp D>;
+            bindings = <&hmr LCTRL D>, <&kp D>, <&kp D>;
         };
 
         F_hdmlshft: F_hdmlshft {
             compatible = "zmk,behavior-tap-dance";
             label = "F_HDMLSHFT";
             #binding-cells = <0>;
-            bindings = <&hmr LSHIFT F>, <&kp F>;
+            bindings = <&hmr LSHIFT F>, <&kp F>, <&kp F>;
         };
 
         J_hmdrshft: J_hmdrshft {
@@ -85,42 +85,42 @@
             compatible = "zmk,behavior-tap-dance";
             label = "K_HMDRCTRL";
             #binding-cells = <0>;
-            bindings = <&hmr RCTRL K>, <&kp K>;
+            bindings = <&hmr RCTRL K>, <&kp K>, <&kp K>;
         };
 
         L_hmdralt: L_hmdralt {
             compatible = "zmk,behavior-tap-dance";
             label = "L_HMDRALT";
             #binding-cells = <0>;
-            bindings = <&hmr RIGHT_ALT L>, <&kp L>;
+            bindings = <&hmr RIGHT_ALT L>, <&kp L>, <&kp L>;
         };
 
         semi_hmdrgui: semi_hmdrgui {
             compatible = "zmk,behavior-tap-dance";
             label = "SEMI_HMDRGUI";
             #binding-cells = <0>;
-            bindings = <&hmr RIGHT_GUI SEMI>, <&kp SEMI>;
+            bindings = <&hmr RIGHT_GUI SEMI>, <&kp SEMI>, <&kp SEMI>;
         };
 
         ltdspace: ltdspace {
             compatible = "zmk,behavior-tap-dance";
             label = "LTDSPACE";
             #binding-cells = <0>;
-            bindings = <&lt 3 SPACE>, <&kp SPACE>;
+            bindings = <&lt 3 SPACE>, <&kp SPACE>, <&kp SPACE>;
         };
 
         ltdbksp: ltdbksp {
             compatible = "zmk,behavior-tap-dance";
             label = "LTDBKSP";
             #binding-cells = <0>;
-            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
         };
 
         ltdenter: ltdenter {
             compatible = "zmk,behavior-tap-dance";
             label = "LTDENTER";
             #binding-cells = <0>;
-            bindings = <&lt 5 ENTER>, <&kp ENTER>;
+            bindings = <&lt 5 ENTER>, <&kp ENTER>, <&kp ENTER>;
         };
     };
 
@@ -191,9 +191,9 @@
 
         navigation_layer {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &kp K_UNDO      &kp K_PASTE  &kp K_COPY    &kp K_CUT  &kp K_REDO  &kp K_MUTE
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW  &kp RIGHT  &kp RIGHT   &kp C_VOLUME_UP
-&trans  &trans    &trans    &trans     &trans     &trans    &kp K_LOCK      &kp HOME     &kp PG_UP     &kp PG_DN  &kp END     &kp C_VOLUME_DOWN
+&trans  &trans    &trans    &trans     &trans     &trans    &kp K_UNDO      &kp K_PASTE  &kp K_COPY     &kp K_CUT  &kp K_REDO  &kp K_MUTE
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW   &kp RIGHT  &kp RIGHT   &kp C_VOLUME_UP
+&trans  &trans    &trans    &trans     &trans     &trans    &kp K_LOCK      &kp HOME     &kp PAGE_DOWN  &kp PG_UP  &kp END     &kp C_VOLUME_DOWN
                             &trans     &trans     &trans    &trans          &trans       &trans
             >;
 
