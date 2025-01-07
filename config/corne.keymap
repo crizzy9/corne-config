@@ -53,8 +53,6 @@
             label = "A_HDMLGUI";
             #binding-cells = <0>;
             bindings = <&hmr LGUI A>, <&kp A>;
-
-            tapping-term-ms = <120>;
         };
 
         S_hmdlalt: S_hmdlalt {
@@ -62,8 +60,6 @@
             label = "S_HMDLALT";
             #binding-cells = <0>;
             bindings = <&hmr LALT S>, <&kp S>;
-
-            tapping-term-ms = <120>;
         };
 
         D_hdmlctrl: D_hdmlctrl {
@@ -71,8 +67,6 @@
             label = "D_HDMLCTRL";
             #binding-cells = <0>;
             bindings = <&hmr LCTRL D>, <&kp D>;
-
-            tapping-term-ms = <120>;
         };
 
         F_hdmlshft: F_hdmlshft {
@@ -80,8 +74,6 @@
             label = "F_HDMLSHFT";
             #binding-cells = <0>;
             bindings = <&hmr LSHIFT F>, <&kp F>;
-
-            tapping-term-ms = <120>;
         };
 
         J_hmdrshft: J_hmdrshft {
@@ -89,8 +81,6 @@
             label = "J_HMDRSHFT";
             #binding-cells = <0>;
             bindings = <&hmr RSHFT J>, <&kp J>;
-
-            tapping-term-ms = <120>;
         };
 
         K_hmdrctrl: K_hmdrctrl {
@@ -98,8 +88,6 @@
             label = "K_HMDRCTRL";
             #binding-cells = <0>;
             bindings = <&hmr RCTRL K>, <&kp K>;
-
-            tapping-term-ms = <120>;
         };
 
         L_hmdralt: L_hmdralt {
@@ -107,8 +95,6 @@
             label = "L_HMDRALT";
             #binding-cells = <0>;
             bindings = <&hmr RIGHT_ALT L>, <&kp L>;
-
-            tapping-term-ms = <120>;
         };
 
         semi_hmdrgui: semi_hmdrgui {
@@ -116,8 +102,6 @@
             label = "SEMI_HMDRGUI";
             #binding-cells = <0>;
             bindings = <&hmr RIGHT_GUI SEMI>, <&kp SEMI>;
-
-            tapping-term-ms = <120>;
         };
 
         ltdspace: ltdspace {
@@ -125,8 +109,6 @@
             label = "LTDSPACE";
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&kp SPACE>;
-
-            tapping-term-ms = <120>;
         };
 
         ltdbksp: ltdbksp {
@@ -134,8 +116,6 @@
             label = "LTDBKSP";
             #binding-cells = <0>;
             bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>;
-
-            tapping-term-ms = <120>;
         };
 
         ltdenter: ltdenter {
@@ -143,8 +123,6 @@
             label = "LTDENTER";
             #binding-cells = <0>;
             bindings = <&lt 5 ENTER>, <&kp ENTER>;
-
-            tapping-term-ms = <120>;
         };
     };
 
