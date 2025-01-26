@@ -25,7 +25,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 40 41 39>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
@@ -37,7 +37,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             flavor = "balanced";
             hold-trigger-on-release;
@@ -47,9 +47,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "A_HDMLGUI";
             #binding-cells = <0>;
-            bindings = <&hmr LGUI A>, <&kp A>, <&kp A>;
+            bindings = <&hmr LGUI A>, <&kp A>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         S_hmdlalt: S_hmdlalt {
@@ -58,7 +58,7 @@
             #binding-cells = <0>;
             bindings = <&hmr LALT S>, <&kp S>, <&kp S>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         D_hdmlctrl: D_hdmlctrl {
@@ -67,7 +67,7 @@
             #binding-cells = <0>;
             bindings = <&hmr LCTRL D>, <&kp D>, <&kp D>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         F_hdmlshft: F_hdmlshft {
@@ -85,7 +85,7 @@
             #binding-cells = <0>;
             bindings = <&hmr RSHFT J>, <&kp J>, <&kp J>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         K_hmdrctrl: K_hmdrctrl {
@@ -103,7 +103,7 @@
             #binding-cells = <0>;
             bindings = <&hmr RIGHT_ALT L>, <&kp L>, <&kp L>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         semi_hmdrgui: semi_hmdrgui {
@@ -112,7 +112,7 @@
             #binding-cells = <0>;
             bindings = <&hmr RIGHT_GUI SEMI>, <&kp SEMI>, <&kp SEMI>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         ltdspace: ltdspace {
@@ -121,16 +121,16 @@
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&kp SPACE>, <&kp SPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         ltdbksp: ltdbksp {
             compatible = "zmk,behavior-tap-dance";
             label = "LTDBKSP";
             #binding-cells = <0>;
-            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>, <&kp BACKSPACE>;
+            bindings = <&lt 4 BACKSPACE>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
 
         ltdenter: ltdenter {
@@ -139,7 +139,7 @@
             #binding-cells = <0>;
             bindings = <&lt 5 ENTER>, <&kp ENTER>, <&kp ENTER>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
         };
     };
 
